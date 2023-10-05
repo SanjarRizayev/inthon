@@ -3,7 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <input type="checkbox" id="check" />
+          <nav class="navbar_logo">
+            <a href="./index.html">
+              <img src="./img/logo.png" alt="" />
+            </a>
+          </nav>
+          <nav class="navbar_links">
+            <a href="#">Home</a>
+            <a href="#">Category</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <nav class="navbar_items">
+              <div class="age">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search something here!" />
+              </div>
+              <button>Join the community</button>
+            </nav>
+          </nav>
+          <nav class="navbar_items">
+            <div class="age">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" placeholder="Search something here!" />
+            </div>
+            <button>Join the community</button>
+          </nav>
+          <nav class="navbar_lang">
+            <select>
+              <option value="Eng">Eng</option>
+            </select>
+            <label class="open" for="check">
+              <i class="fa-solid fa-bars"></i>
+            </label>
+            <label class="close" for="check"
+              ><i class="fa-solid fa-xmark"></i
+            ></label>
+          </nav>
+        </div>
+      </nav>
+    </header>
+  </body>
 </html>
