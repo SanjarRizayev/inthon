@@ -1,0 +1,96 @@
+.bods {
+    margin: 60px 0;
+
+    &_wraps {
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+        .bods_wrap {
+            background: #FCEED5;
+        }
+
+        .bods_wrap {
+            background: #FCEED5;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 50px;
+
+            .gpt {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+            }
+
+            h3 {
+                color: var(--primary-color-dark-blue, #003459);
+                font-family: SVN-Gilroy;
+                font-size: 52px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: 68px;
+                /* 130.769% */
+                text-transform: capitalize;
+            }
+
+            h4 {
+                color: var(--primary-color-dark-blue, #003459);
+                font-size: 36px;
+                font-weight: 700;
+                line-height: 54px;
+                text-transform: capitalize;
+                margin-top: 2px;
+            }
+
+            p {
+                color: var(--neutral-color-80, #242B33);
+                font-size: 12px;
+                font-weight: 500;
+                line-height: 18px;
+                margin: 10px 0 20px 0;
+            }
+
+            .jex {
+                margin-top: 30px;
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                .a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 15px;
+                    width: 150px;
+                    height: 40px;
+                    border-radius: 57px;
+                    border: 1.5px solid var(--primary-color-dark-blue, #003459);
+                    color: var(--primary-color-dark-blue, #003459);
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 24px;
+                }
+
+                .b {
+                    width: 150px;
+                    height: 40px;
+                    border-radius: 57px;
+                    background: var(--primary-color-dark-blue, #003459);
+                    color: var(--neutral-color-00, #FDFDFD);
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 24px;
+                    border: none;
+                }
+            }
+        }
+
+        .bods_wrap2 {
+            background: #FFB775;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
