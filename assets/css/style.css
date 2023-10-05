@@ -17,8 +17,10 @@ a {
 
 header {
   padding: 20px 0;
-  border-radius: 0px 0px 40px 40px;
   background: var(--Linear, linear-gradient(103deg, #FCEED5 6.43%, #FCEED5 78.33%, #FFE7BA 104.24%));
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 .navbar > div {
@@ -101,6 +103,83 @@ header {
   display: none;
 }
 
+.showcase {
+  border-radius: 0px 0px 40px 40px;
+  background: var(--Linear, linear-gradient(103deg, #FCEED5 6.43%, #FCEED5 78.33%, #FFE7BA 104.24%));
+}
+.showcase_wraps {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.showcase_wraps .showcase_right h1 {
+  color: var(--primary-color-dark-blue-80, #002A48);
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 68px;
+  text-transform: capitalize;
+}
+.showcase_wraps .showcase_right h2 {
+  color: var(--primary-color-dark-blue-80, #002A48);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 60px;
+  text-transform: capitalize;
+}
+.showcase_wraps .showcase_right p {
+  color: var(--neutral-color-80, #242B33);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.showcase_wraps .showcase_right .jex {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.showcase_wraps .showcase_right .jex .a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 150px;
+  height: 40px;
+  border-radius: 57px;
+  border: 1.5px solid var(--primary-color-dark-blue, #003459);
+  color: var(--primary-color-dark-blue, #003459);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.showcase_wraps .showcase_right .jex .b {
+  width: 150px;
+  height: 40px;
+  border-radius: 57px;
+  background: var(--primary-color-dark-blue, #003459);
+  color: var(--neutral-color-00, #FDFDFD);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  border: none;
+}
+.showcase_wraps .showcase_left {
+  position: relative;
+}
+.showcase_wraps .showcase_left .s {
+  position: absolute;
+  top: 10%;
+  left: 190px;
+}
+.showcase_wraps .showcase_left .c {
+  position: absolute;
+  top: 30%;
+  left: 150px;
+}
+.showcase_wraps .showcase_left .left_img img {
+  width: 100%;
+}
+
 @media (max-width: 1082px) {
   .navbar_links {
     gap: 28px;
@@ -163,6 +242,26 @@ header {
     width: 80%;
     align-items: start;
     padding-left: 10px;
+  }
+}
+@media (max-width: 1010px) {
+  .showcase_wraps {
+    flex-direction: column;
+    align-items: start;
+  }
+  .showcase_wraps .showcase_left .s {
+    display: none;
+  }
+  .showcase_wraps .showcase_left .c {
+    display: none;
+  }
+}
+@media (max-width: 442px) {
+  .showcase_right p {
+    width: 100%;
+  }
+  .showcase_right .jex {
+    flex-direction: column;
   }
 }
 

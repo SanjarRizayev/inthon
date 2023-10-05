@@ -1,0 +1,91 @@
+.showcase {
+    border-radius: 0px 0px 40px 40px;
+    background: var(--Linear, linear-gradient(103deg, #FCEED5 6.43%, #FCEED5 78.33%, #FFE7BA 104.24%));
+
+    &_wraps {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .showcase_right {
+            h1 {
+                color: var(--primary-color-dark-blue-80, #002A48);
+                font-size: 40px;
+                font-weight: 800;
+                line-height: 68px;
+                text-transform: capitalize;
+            }
+
+            h2 {
+                color: var(--primary-color-dark-blue-80, #002A48);
+                font-size: 36px;
+                font-weight: 700;
+                line-height: 60px;
+                text-transform: capitalize;
+            }
+
+            p {
+                color: var(--neutral-color-80, #242B33);
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 24px;
+            }
+
+            .jex {
+                margin-top: 30px;
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                .a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 15px;
+                    width: 150px;
+                    height: 40px;
+                    border-radius: 57px;
+                    border: 1.5px solid var(--primary-color-dark-blue, #003459);
+                    color: var(--primary-color-dark-blue, #003459);
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 24px;
+                }
+
+                .b {
+                    width: 150px;
+                    height: 40px;
+                    border-radius: 57px;
+                    background: var(--primary-color-dark-blue, #003459);
+                    color: var(--neutral-color-00, #FDFDFD);
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 24px;
+                    border: none;
+                }
+            }
+        }
+
+        .showcase_left {
+            position: relative;
+
+            .s {
+                position: absolute;
+                top: 10%;
+                left: 190px;
+            }
+
+            .c {
+                position: absolute;
+                top: 30%;
+                left: 150px;
+            }
+
+            .left_img {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

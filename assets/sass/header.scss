@@ -1,7 +1,9 @@
 header {
     padding: 20px 0;
-    border-radius: 0px 0px 40px 40px;
     background: var(--Linear, linear-gradient(103deg, #FCEED5 6.43%, #FCEED5 78.33%, #FFE7BA 104.24%));
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
 .navbar {

@@ -82,3 +82,35 @@
         }
     }
 }
+
+@media(max-width:1010px) {
+    .showcase {
+        &_wraps {
+            flex-direction: column;
+            align-items: start;
+
+            .showcase_left {
+                .s {
+                    display: none;
+                }
+                .c{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:442px) {
+    .showcase {
+        &_right {
+            p {
+                width: 100%;
+            }
+
+            .jex {
+                flex-direction: column;
+            }
+        }
+    }
+}
