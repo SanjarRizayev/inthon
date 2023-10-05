@@ -172,3 +172,27 @@
         }
     }
 }
+
+@media(max-width:986px) {
+    .parduct {
+        &_wraps {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+@media(max-width:744px) {
+    .parduct {
+        &_wraps {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media(max-width:482px) {
+    .parduct {
+        &_wraps {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}
